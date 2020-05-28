@@ -165,6 +165,24 @@ body.dark-mode {
  ******************************************/
 
 
+body.dark-mode .sidebar-light,
+body.dark-mode .sidebar {
+	background-color: var(--color-darkest) !important;
+	border-right: 1px solid    var(--color-dark-80);
+}
+body.dark-mode .sidebar-item{
+  color: var(--color-gray-lightest);
+}
+
+body.dark-mode .message.new-day:after {
+	margin: 0;
+}
+body.dark-mode .message.new-day:before{
+	left: calc(50% - 50px);
+  	min-width: 50px;
+}
+
+
 /***************Main Chat*****************/
 
 body.dark-mode a {
@@ -247,7 +265,7 @@ body.dark-mode .message .reactions>li,
 body.dark-mode .message .title .is-bot,
 body.dark-mode .message .title .role-tag,
 body.dark-mode .message.new-day::before {
-	background-color: var(--rc-color-primary-dark);
+	background: var(--color-darkest);
 }
 
 body.dark-mode .message.editing {
